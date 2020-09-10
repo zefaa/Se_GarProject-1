@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Autocomplete Co</title>
+	<link rel="stylesheet" href="<?php echo base_url().'assets/css/bootstrap.css'?>">
+	<link rel="stylesheet" href="<?php echo base_url().'assets/css/jquery-ui.css'?>">
+</head>
+<body>
+	<div class="container">
+	
+	<div class="row mt-3">
+		<div class = "col-md-6">
+		
+      <div class="card">
+        <div class="card-header">
+        Form Tambah Data Seminaris 
+        </div>
+          <div class="card-body">
+            <?= validation_errors() ?>
+            <form action="<?= base_url().'DataSeminaris/tambah' ?>" method="post">
+              <div class="form-group">
+              <label for="texts">Nama</label>
+              <input type="text" class="form-control" name="nama" placeholder="nama" >
+              </div>
+
+              <div class="form-group">
+              <label for="textf">Paroki</label>
+              <input type="text" class="form-control" name="paroki" placeholder="paroki">
+              </div>
+
+              <div class="form-group">
+              <label for="textg">Tempat, Tanggal Lahir</label>
+              <input type="textd" class="form-control" name="ttl" placeholder="Tempat Tanggal Lahir" >
+              </div>
+
+              <div class="form-group">
+              <label for="textg">Kelas</label>
+              <select class="form-control" id="kelas" name="kelas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select>
+              </div>
+            <button type="submit" name="tambah" class="btn btn-primary float-right">Tambah Data
+              </button>
+            </form>
+
+  		        
+            </form>
+          </div>
+        </div >
+      </div>
+    </div>
+</div>
+
+
+
+
+	
+
+
+</body>
+</html>

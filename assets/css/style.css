@@ -1,0 +1,23 @@
+/* CSS DOCUMENT */
+.home {
+	
+
+}
+.home img{
+	width: 200px;
+}
+.container .Tanggal p {
+	color: red;
+}
+.nav-link:hover::after{
+	content: '';
+	display: block;
+	border-bottom: 3px solid #0B63DC;
+	width: 50%;
+	margin:auto;
+}
+.navbar-brand, .nav-link{
+	color: white !important;
+}
+
+
